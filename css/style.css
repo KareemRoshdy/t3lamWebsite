@@ -1,0 +1,407 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contenar
+{
+    width: 80%;
+    margin: auto;
+}
+header
+{
+    background: rgba(0,0,0,0.7)
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #fff;
+    z-index: 1000;
+}
+nav .logo
+{
+    position: relative;
+    padding: 0 5px 0 20px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+nav .logo:hover
+{
+    color: #d67086;
+}
+nav .logo i
+{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    
+}
+nav .login-list
+{
+    list-style: none;
+    direction: rtl;
+}
+nav .login-list li
+{
+    display: inline-block;
+    margin-right:10px;
+}
+
+nav .login-list li a
+{
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+nav .login-list li .login 
+{
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+nav .login-list li .login:hover
+{
+    background-color: rgb(41 41 73);
+    border: 2px solid rgb(41 41 73);
+}
+nav .login-list li .signin 
+{
+    background-color: #fff;
+    color: #111;border: 2px solid #fff;
+    border-radius: 6px;
+    transition: background 0.5s, color 0.5s;
+}
+nav .login-list li .signin:hover
+{
+    background: none;
+    color: #fff;
+}
+nav .login-list a:hover
+{
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+.home
+{
+    width: 100%;
+    height: 100vh;
+    background: url(../background.png) center ;
+}
+.home-content
+{
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-desc h1
+{
+ color: #5d66d3;
+ font-size: 30px;
+}
+.home-desc h3
+{
+    position: relative;
+    padding: 10px 5px 10px 20px;
+    color: #d67086;
+}
+.home-desc i
+{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.home-desc a
+{
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+.home-desc a.log 
+{
+    background: rgb(41 41 73);
+    color: #fff;
+    border: 2px solid rgb(68 66 67);
+    transition:background 0.5s;
+}
+.home-desc a.sig 
+{
+    color: #111;
+    border: 2px solid #5d66d3;
+    transition:background 0.5s;
+}
+.home-desc a.sig:hover
+{
+    background: #d67086;
+    color: #fff;
+    border: 2px solid #d67086;
+}
+.home-desc a.log:hover
+{
+    background: rgb(53 58 132);
+
+}
+.home-desc span
+{
+    display: block;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 0;
+    color: #5d66d3;
+}
+.home-desc span::after
+{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 110px;
+    height: 2px;
+    background: #5d66d3;
+}
+.home-desc span::before
+{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 6px;
+    width: 110px;
+    height: 2px;
+    background: #5d66d3;
+}
+.home-media ul
+{
+    list-style: none;
+}
+.home-media li
+{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.home-media li i
+{
+    background: #292949;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition:background 0.5s ,color 0.5s ;
+}
+.home-media li i:hover
+{
+    background: #fff;
+    color: #292949;
+}
+.section-header
+{
+    padding: 100px 0;
+    text-align: center;
+    font-size: 30px;
+    color: #292949;
+}
+hr
+{
+    margin: 20px 0;
+    border: 0;
+    height: 1px; 
+    background: #adadad;
+}
+.about-content
+{
+    display: flex;
+    text-align: center;
+}
+.about-content  .mony
+{
+    margin: 0 20px;
+}
+.about-content  i
+{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.about-content h2
+{
+    font-size: 25px;
+}
+.about-content p
+{
+    padding: 30px 10px;
+    font-weight: 600;
+}
+
+.about-content  .st p
+{
+    color: rgb(68 66 67);
+}
+.about-content  .st h2
+{
+    color: #292949;
+}
+.about-content  .st i
+{
+    color: rgb(41 41 73);
+}
+.about-content  .st
+{
+    padding: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    
+}
+.about-content  .st:hover
+{
+    transform: translateY(-10px);
+}
+.coust-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+.coust-content .coust-item 
+{
+    width: 350px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.coust-content .coust-item .top
+{
+    padding: 20px 0;
+    text-align: center;
+    background: #292949;
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.coust-content .coust-item .list-coust
+{
+    list-style: none;
+    padding: 20px ;
+}
+.coust-content .coust-item .list-coust li
+{
+    position: relative;
+    text-align: right;
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+.coust-content .coust-item .list-coust  i
+{
+    display: block;
+    text-align: left;
+    position: absolute;
+    top: 15px;
+    color: #21e051;
+}
+.coust-content .coust-item .list-coust  i.icon
+{
+    color: red;
+}
+.coust-item a
+{
+    display: block;
+    background: #292949;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    transition:  background 0.5s;
+}
+.coust-item a:hover
+{
+    background: #21e051;
+}
+footer
+{
+background: rgba(0,0,0,0.8);
+}
+.footer-top
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.footer-logo 
+{
+    position: relative;
+    padding: 30px 0 0 30px;
+    color: #fff;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.footer-logo:hover
+{
+    color: #d67086;
+}
+.footer-logo i
+{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 30px;
+
+}
+.footer-logo h2
+{
+    font-size: 40px;
+}
+.footer-login .login-list
+{
+    list-style: none;
+    
+}
+.footer-login .login-list li 
+{
+    display: block;
+    margin: 10px 0;
+    text-align: right;
+}
+.footer-login .login-list li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding:5px 10px;
+
+}
+.footer-login .login-list li a:hover
+{
+    background: #292949;
+    border-radius: 6px;
+}
+.footer-btm
+{
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    padding: 10px 0;
+}
+.footer-btm .copyright
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 400;
+}
+.copyright p span
+{
+    color: #d67086;
+}
